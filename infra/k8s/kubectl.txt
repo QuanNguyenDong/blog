@@ -1,0 +1,10 @@
+kubectl get deployments
+kubectl get pods
+kubectl rollout restart deployment [depl_name]
+
+Cluster IP -> set up URL to access a pod. only exposes pods in the Cluster
+Node Port -> make a pod accessible from outside the cluster (dev purposes)
+Load Balancer -> make a pod accessible from outside the cluster (right way to expose a pod)
+External Name -> redirect an in-cluster request to a CNAME url
+
+skaffold dev
